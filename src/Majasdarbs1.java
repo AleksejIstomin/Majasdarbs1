@@ -1,7 +1,13 @@
-public class Majasdarbs1 {
+import java.util.Scanner;
 
+public class Majasdarbs1 {
         public static void main(String[] args) {
-                int colorRange = 500;  //  Enter range here (visible range from 380 to 750, invisible range all others)
+
+                Scanner in = new Scanner(System.in);
+              //  int colorRange = 100;  //  Enter range here (visible range from 380 to 750, invisible range all others)
+                System.out.print("Input a number: ");
+                int colorRange = in.nextInt();
+
                 if ((colorRange >= 380) && (colorRange <= 449)) {
                         System.out.println("violet");
                 } else if ((colorRange >= 450) && (colorRange <= 494)) {
